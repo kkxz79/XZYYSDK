@@ -1,0 +1,95 @@
+{
+    "content": {
+        "shopInfo": {
+            "isBusiness": 1,
+            "businessDesc": "00:30-23:30"
+        },
+        "commodityList": [
+            {
+                "sortId": 1,
+                "kindDesc": "限时优享7:00-9:00",
+                "kindName": "鲜果时光",
+                "productList": [
+                    {
+                        "standard": [
+                            {
+                                "name": "无糖",
+                                "maxAmount": 6
+                            },
+                            {
+                                "name": "半糖",
+                                "maxAmount": 6
+                            },
+                            {
+                                "name": "单糖",
+                                "maxAmount": 6
+                            }
+                        ],
+                        "productId": "3709",
+                        "coffeeLabel": "买1赠2",
+                        "enName": "Caramel Americano",
+                        "name": "焦糖美式",
+                        "maxAmount": 5,
+                    }
+                ]
+            },
+            {
+                "sortId": 1,
+                "kindDesc": "不含咖啡的拿铁",
+                "kindName": "零度拿铁",
+                "productList": [
+                    {
+                        "standard": [
+                            {
+                                "name": "无奶",
+                                "maxAmount": 6
+                            },
+                            {
+                                "name": "单份奶",
+                                "maxAmount": 6
+                            },
+                            {
+                                "name": "双份奶",
+                                "maxAmount": 6
+                            }
+                        ],
+                        "productId": "3703",
+                        "coffeeLabel": "买1赠2",
+                        "enName": "Mocha",
+                        "name": "摩卡",
+                        "maxAmount": 5,
+                    }
+                ]
+            },
+            {
+                "sortId": 1,
+                "kindDesc": "悠鲜一刻",
+                "kindName": "鲜榨果汁",
+                "productList": [
+                    {
+                        "standard": [
+                            {
+                                "name": "香草",
+                                "maxAmount": 6
+                            },
+                            {
+                                "name": "榛子",
+                                "maxAmount": 6
+                            },
+                            {
+                                "name": "焦糖",
+                                "maxAmount": 6
+                            }
+                        ],
+                        "productId": "3700",
+                        "coffeeLabel": "买1赠2",
+                        "enName": "Fresh Orange Juice",
+                        "name": "鲜榨橙汁",
+                        "maxAmount": 5,
+                    }
+                ]
+            }
+        ]
+    },
+    "msg": "成功"
+}
