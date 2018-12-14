@@ -13,6 +13,7 @@
 #import "ContainerModel.h"
 #import "BlackAndWhiteListModel.h"
 #import "TimeStampModel.h"
+#import "XZBook.h"
 
 @interface ViewController ()
 @property(nonatomic,assign)NSInteger modeType;
@@ -22,34 +23,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _modeType = 4;
+    _modeType = 2;
     switch (_modeType) {
         case 1:
         {
-            [self simpleModelJsonModelConvert];//简单的数模转换
+            [self originalJsonModelConvert];//原始json数据转换
         }
             break;
         case 2:
         {
-            [self containModelJsonModelConvert];//model中包含其他model
+            [self simpleModelJsonModelConvert];//简单的数模转换
         }
             break;
         case 3:
         {
-            [self differentJsonKeyModelConvert];//Model属性名和JSON中key不相同
+            [self containModelJsonModelConvert];//model中包含其他model
         }
             break;
         case 4:
         {
-            [self containerJsonModelConvert];//容器类属性
+            [self differentJsonKeyModelConvert];//Model属性名和JSON中key不相同
         }
             break;
         case 5:
         {
-            [self blackAndWhiteListModelConvert];//白名单和黑名单
+            [self containerJsonModelConvert];//容器类属性
         }
             break;
         case 6:
+        {
+            [self blackAndWhiteListModelConvert];//白名单和黑名单
+        }
+            break;
+        case 7:
         {
             [self timestamp];//数据校验与自定义转换
         }
@@ -68,10 +74,11 @@
     return [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
 }
 
--(NSArray*)getJsonArrayWithFileName:(NSString*)fileName {
-    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"json"];
-    NSData *data = [NSData dataWithContentsOfFile:path];
-    return [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+//TODO：原始json数据转换
+-(void)originalJsonModelConvert {
+    NSString * jsonStr = @"{\"name\": \"Harry Potter\", \"pages\": 256, \"author\": {\"name\": \"J.K.Rowling\", \"birthday\": \"1965-07-31\" }}";
+    XZBook * book = [XZBook yy_modelWithJSON:jsonStr];
+    NSLog(@"original book：\n%@\n%@\n%@",book.name,book.author.name,book.author.birthday);
 }
 
 //TODO:简单的数模互转

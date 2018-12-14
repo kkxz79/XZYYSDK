@@ -13,6 +13,8 @@
 		9B402CE621BBADC600921F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B402CE521BBADC600921F3C /* Assets.xcassets */; };
 		9B402CE921BBADC600921F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B402CE721BBADC600921F3C /* LaunchScreen.storyboard */; };
 		9B402CEC21BBADC600921F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B402CEB21BBADC600921F3C /* main.m */; };
+		9B8540D721C2328F0036022E /* XZAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8540D621C2328F0036022E /* XZAuthor.m */; };
+		9B8540DA21C232A30036022E /* XZBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8540D921C232A30036022E /* XZBook.m */; };
 		9B9C1A9221C0B06C00676477 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C1A9121C0B06C00676477 /* UserModel.m */; };
 		9B9C1A9921C0BA1600676477 /* DoubleModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C1A9321C0BA1600676477 /* DoubleModel.json */; };
 		9B9C1A9A21C0BA1600676477 /* timestamp.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C1A9421C0BA1600676477 /* timestamp.json */; };
@@ -43,6 +45,10 @@
 		9B402CE821BBADC600921F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B402CEA21BBADC600921F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B402CEB21BBADC600921F3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B8540D521C2328F0036022E /* XZAuthor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XZAuthor.h; sourceTree = "<group>"; };
+		9B8540D621C2328F0036022E /* XZAuthor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZAuthor.m; sourceTree = "<group>"; };
+		9B8540D821C232A30036022E /* XZBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XZBook.h; sourceTree = "<group>"; };
+		9B8540D921C232A30036022E /* XZBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZBook.m; sourceTree = "<group>"; };
 		9B9C1A9021C0B06C00676477 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		9B9C1A9121C0B06C00676477 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		9B9C1A9321C0BA1600676477 /* DoubleModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DoubleModel.json; sourceTree = "<group>"; };
@@ -163,6 +169,10 @@
 				9B9C1AB021C10D7700676477 /* TimeStampModel.m */,
 				9B9C1AB221C112B700676477 /* XZShadow.h */,
 				9B9C1AB321C112B700676477 /* XZShadow.m */,
+				9B8540D521C2328F0036022E /* XZAuthor.h */,
+				9B8540D621C2328F0036022E /* XZAuthor.m */,
+				9B8540D821C232A30036022E /* XZBook.h */,
+				9B8540D921C232A30036022E /* XZBook.m */,
 				9B9C1AA821C0EC4500676477 /* Container */,
 			);
 			path = Models;
@@ -281,11 +291,13 @@
 			files = (
 				9B9C1AB121C10D7700676477 /* TimeStampModel.m in Sources */,
 				9B402CE121BBADBD00921F3C /* ViewController.m in Sources */,
+				9B8540D721C2328F0036022E /* XZAuthor.m in Sources */,
 				9B9C1AAE21C109C500676477 /* BlackAndWhiteListModel.m in Sources */,
 				9B9C1AA721C0DEE800676477 /* BookModel.m in Sources */,
 				9B402CEC21BBADC600921F3C /* main.m in Sources */,
 				9B9C1A9221C0B06C00676477 /* UserModel.m in Sources */,
 				9B9C1AB421C112B700676477 /* XZShadow.m in Sources */,
+				9B8540DA21C232A30036022E /* XZBook.m in Sources */,
 				9B9C1AA121C0D6F800676477 /* AnthorModel.m in Sources */,
 				9B9C1AA421C0D79000676477 /* Book.m in Sources */,
 				9B402CDE21BBADBD00921F3C /* AppDelegate.m in Sources */,
